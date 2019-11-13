@@ -1,3 +1,4 @@
+```python
 list = ["10000","5000","1000","500","100","50","10","1"]
 another_list =[]
 def namename(num, money_to_change,what_change_by):
@@ -25,3 +26,4 @@ for n in list:
         print(another_list[-1])
     # else:
     #     print("no")
+```
