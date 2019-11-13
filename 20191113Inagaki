@@ -1,0 +1,34 @@
+```python
+# coding:utf-8
+
+
+class Okane:
+    def __init__(self, value, name):
+        self.value = value
+        self.name = name
+
+    amount = 0
+
+    def count(self):
+        global money
+
+        while money / self.value >= 1:
+            self.amount += 1
+            money -= self.value
+
+
+print("金額を入力してください:")
+money = input()
+
+sen = Okane(1000, "千円")
+gohyaku = Okane(500, "五百円")
+hyaku = Okane(100, "百円")
+goju = Okane(50, "五十円")
+ju = Okane(10, "十円")
+go = Okane(5, "五円")
+ichi = Okane(1, "一円")
+
+for i in [sen, gohyaku, hyaku, goju, ju, go, ichi]:
+    i.count()
+    print("{}: {}枚".format(i.name, i.amount))
+```
